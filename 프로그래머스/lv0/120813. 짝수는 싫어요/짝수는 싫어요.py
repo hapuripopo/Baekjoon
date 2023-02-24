@@ -1,3 +1,2 @@
 def solution(n):
-    answer = list(range(1, n+1, 2))
-    return answer
+    return [x for x in range(n+1) if x % 2 != 0]
