@@ -1,5 +1,4 @@
 from collections import Counter
 
 def solution(s):
-    cnt = Counter(s)
-    return ''.join(sorted([c for c in cnt if cnt[c] == 1]))
+    return ''.join(sorted([c for c in s if Counter(s)[c] == 1]))
